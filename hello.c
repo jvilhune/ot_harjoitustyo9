@@ -2,6 +2,7 @@
 include <stdio.h>
 long calculateSum(long a, lon b);
 long calculateAddition(long a, lon b);
+long calculateSubbraction(long a, lon b);
 
 int main(void)
 {
@@ -21,6 +22,9 @@ int main(void)
 
 	retVal = calculateAddition(20, 30);
 	printf("retVal = ", retVal);
+
+	retVal = calculateSubbraction(20, 30);
+	printf("retVal = ", retVal);
        
 	return 0;
 }
@@ -38,6 +42,14 @@ long calculateAddition(long a, lon b)
 	long retVal = 0;
 
 	retVal = a * b;
+	return retVal;
+}
+
+long calculateSubbraction(long a, lon b)
+{
+	long retVal = 0;
+
+	retVal = a - b;
 	return retVal;
 }
 
