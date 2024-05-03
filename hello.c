@@ -3,6 +3,7 @@ include <stdio.h>
 long calculateSum(long a, lon b);
 long calculateAddition(long a, lon b);
 long calculateSubbraction(long a, lon b);
+long calculateDivision(long a, lon b);
 
 int main(void)
 {
@@ -24,6 +25,9 @@ int main(void)
 	printf("retVal = ", retVal);
 
 	retVal = calculateSubbraction(20, 30);
+	printf("retVal = ", retVal);
+
+	retVal = calculateDivision(20, 2);
 	printf("retVal = ", retVal);
        
 	return 0;
@@ -50,6 +54,14 @@ long calculateSubbraction(long a, lon b)
 	long retVal = 0;
 
 	retVal = a - b;
+	return retVal;
+}
+
+long calculateDivision(long a, lon b)
+{
+	long retVal = 0;
+
+	retVal = a/b;
 	return retVal;
 }
 
