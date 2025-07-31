@@ -2,6 +2,8 @@
 include <stdio.h>
 long calculateSum(long a, lon b);
 long calculateAddition(long a, lon b);
+long calculateMultiplication(long a, long b);
+long calculatedivision(long a, long b);
 
 int main(void)
 {
@@ -21,6 +23,12 @@ int main(void)
 
 	retVal = calculateAddition(20, 30);
 	printf("retVal = ", retVal);
+
+        retVal = calculateMultiplication(40, 20);
+	printf("retVal = ", retVal);
+
+        retVal = calculatedivision(40, 20);
+	printf("retVal = ", retVal);
        
 	return 0;
 }
@@ -38,6 +46,22 @@ long calculateAddition(long a, lon b)
 	long retVal = 0;
 
 	retVal = a * b;
+	return retVal;
+}
+
+long calculateMultiplication(long a, long b)
+{
+	long retVal = 0;
+
+	retVal = a * b;
+	return retVal;
+}
+
+long calculatedivision(long a, long b)
+{
+	long retVal = 0;
+
+	retVal = a/b;
 	return retVal;
 }
 
